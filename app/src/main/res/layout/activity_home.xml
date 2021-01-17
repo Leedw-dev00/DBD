@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"/>
+
+        <ImageView
+            android:id="@+id/item_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lsit"
+            android:layout_marginLeft="357dp"
+            android:layout_marginTop="14.9dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:fontFamily="@font/font_wmp"
+                android:textColor="#A8A8A8"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:text=" 님"
+               android:textSize="35sp"
+                android:fontFamily="@font/font_wmp"
+                android:textColor="#A8A8A8"/>
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnBluetoothOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="블루투스 ON"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnBluetoothOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="블루투스 OFF"
+            app:layout_constraintStart_toEndOf="@+id/btnBluetoothOn"
+            app:layout_constraintTop_toTopOf="@+id/btnBluetoothOn" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvBluetoothStatus"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:text="status"
+            app:layout_constraintStart_toStartOf="@+id/btnBluetoothOn"
+            app:layout_constraintTop_toBottomOf="@+id/btnBluetoothOn" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvReceiveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Receive"
+            app:layout_constraintStart_toStartOf="@+id/btnSendData"
+            app:layout_constraintTop_toBottomOf="@+id/btnSendData" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="전송"
+            app:layout_constraintStart_toStartOf="@+id/btnConnect"
+            app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/tvSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Send Data"
+            app:layout_constraintStart_toEndOf="@+id/btnSendData"
+            app:layout_constraintTop_toTopOf="@+id/btnSendData" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="오늘의 상품"
+        android:textColor="#000"
+        android:fontFamily="@font/font_wmp"/>
+
+    <com.aqoong.lib.slidephotoviewer.SlidePhotoViewer
+        android:id="@+id/slideViewer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:itemBackground="@drawable/slidephotoviewer_default_item_background"
+        app:sidePreview="true"
+        app:useIndicator="true"
+        app:autoSlide="true"
+        app:maxSize="10"
+        app:autoSlide_repeat_time="4000"
+        app:placeholder="@drawable/ic_placeholder"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Bluetooth"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:fontFamily="@font/font_wmp" />
+
+        <Button
+            android:id="@+id/btn_QR"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="QR Scan"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:fontFamily="@font/font_wmp" />
+
+        <Button
+            android:id="@+id/btn_Coupon"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="My Coupon"
+            android:backgroundTint="#fff"
+            android:textColor="#000"
+            android:fontFamily="@font/font_wmp" />
+
+
+        <TextView
+            android:id="@+id/item"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_Recomendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#5c5c5c">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_Map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/map"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/menu"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/home_choice"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_Notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/notice"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

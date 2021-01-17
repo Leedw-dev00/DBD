@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#D1D9F2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="167dp"
+            android:src="@drawable/cart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="바이바잇"
+            android:fontFamily="@font/font"
+            android:textSize="40sp"
+            android:textColor="#393F53"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스마트 쇼핑 서비스"
+            android:fontFamily="@font/font"
+            android:textSize="18sp"
+            android:textColor="#393F53"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="#393F53"
+            android:textSize="18sp"
+            android:lineSpacingExtra="6sp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:textColor="#393F53"
+            android:textSize="18sp"
+            android:lineSpacingExtra="6sp"
+            android:fontFamily="@font/font"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:text="SIGN IN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="@font/font"
+        android:layout_gravity="center"
+        android:backgroundTint="#3A3F51"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account ?"
+            android:textSize="13sp"
+            android:fontFamily="@font/font"/>
+        <TextView
+            android:id="@+id/txt_Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#ff5a54"
+            android:fontFamily="@font/font"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

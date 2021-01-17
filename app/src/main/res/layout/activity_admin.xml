@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"/>
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="상위 판매량 제품"
+                android:textColor="#000"
+                android:fontFamily="@font/font_wmp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border3"
+                    android:text="품목"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border3"
+                    android:text="판매량"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border3"
+                    android:text="비고"
+                    android:fontFamily="@font/font_wmp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="바나나"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="40"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="오전 9시 ~ 오후 1시 판매량의 60% 차지"
+                    android:fontFamily="@font/font_wmp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="배추"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="25"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="오전 11시 ~ 오후 3시 판매량의 50% 차지"
+                    android:fontFamily="@font/font_wmp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="골뱅이"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_marginLeft="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="22"
+                    android:fontFamily="@font/font_wmp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="3dp"
+                    android:gravity="center"
+                    android:background="@drawable/border2"
+                    android:text="오후 4시 ~ 오후 9시 판매량의 70% 차지"
+                    android:fontFamily="@font/font_wmp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="관리자 추천"
+                android:textColor="#000"
+                android:fontFamily="@font/font_wmp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[매장관리]"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff0000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="김장철을 맞아 오전시간 식품코너 A의 배추 판매량에 대한 판매계획을 수립해주세요."
+                    android:textSize="11sp"
+                    android:textColor="#ff0000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[할인 행사]"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#0000ff"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="딸기 할인 행사 시작하였습니다. 적극적인 프로모션으로 판매량을 올려주세요."
+                    android:textSize="11sp"
+                    android:textColor="#0000ff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[매장관리]"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff0000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="식품코너G가 많이 팔리지 않습니다. 판매전략을 개선해주세요."
+                    android:textSize="11sp"
+                    android:textColor="#ff0000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:background="@drawable/border2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[매장 공지]"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#1e7524"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코로나로인한 운영시간 변경을 숙지해주세. (바이바잇 운영시간은 오전9시부터 오후9시)"
+                    android:textSize="11sp"
+                    android:textColor="#1e7524"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[매장관리]"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#ff0000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오후 6시 매장이 가장 붐비는 시간에 식품코너 B의 준비를 조금 더 신경 써주세요."
+                    android:textSize="11sp"
+                    android:textColor="#ff0000"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
